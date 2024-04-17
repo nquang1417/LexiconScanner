@@ -19,7 +19,7 @@ class LexicalAnalysis:
         self.transition_table = {
             0: {'number':1, '.':7, '"':9, 'letter':11, 'E':11, 'seporator':12, '+':13, '-':13, '*':13, '/':13, '<':14, '>':14, '!':14, '=':16, '|':17, '&':19},
             1: {'number':1, '.':2, 'E':4},
-            2: {'number':3},
+            2: {'number':3, 'E': 4},
             3: {'number':3, 'E':4},
             4: {'number':6, '+':5, '-':5},
             5: {'number':6},
